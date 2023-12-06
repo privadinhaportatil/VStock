@@ -1,0 +1,365 @@
+<!doctype html>
+  <html lang="pt-br">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Inventário - V-Stock</title>
+  <link rel="stylesheet" href="VS.css">
+  </head>
+ 
+ <body>
+	<div class="background-itens">
+		<header>
+			<div class="logo"><h1>V-Stock</h1></div>
+			<div class="cabecalho">
+				<li><a href="MenuVStock.html">Início</a></li>
+				<li><a href="InventarioVStock.html">Inventário</a></li>
+				<li><a href="ItensVStock.html">Itens</a></li>
+				<li><a href="LoginVStock.html">Login</a></li>
+			</div>
+
+			<div class="open-mobile" id="open-mobile">
+				<a><img src="Imagens/MenuMobile.png"></a>
+			</div>
+
+			<div class="menu-mobile" id="menu-mobile">
+				<div class="close-mobile" id="close-mobile">
+					<h2>X</h2>
+				</div>
+
+				<nav>
+					<ul>
+					<li><a href="MenuVStock.html">Início</a></li>
+					<li><a href="InventarioVStock.html">Inventário</a></li>
+					<li><a href="ItensVStock.html">Itens</a></li>
+					<li><a href="LoginVStock.html">Login</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+	 <section id="Itens">
+			<div class="itens-seleção">
+				<h1>ITENS</h1>
+				<a href="#openmodal1"><img src="Imagens/CremeDeLeite.png"><br>
+					Piracanjuba - Creme de Leite, 200g</a><br>
+				<a href="#openmodal2"><img src="Imagens/CaixaDeLeite.png"><br>
+					Piracanjuba - Leite Integral, 1L</a><br>
+				<a href="#openmodal3"><img src="Imagens/LeiteEmPo.png"><br>
+					Ninho - Leite em Pó Integral, 380g</a><br>
+				<a href="#openmodal4"><img src="Imagens/Requeijao.png"><br>
+					VIGOR - Requeijão, 200g</a><br>
+				<a href="#openmodal5"><img src="Imagens/Danone.png"><br>
+					DANONE - Bebida Lactea de Morango, 510g</a><br>
+				<a href="#openmodal6"><img src="Imagens/QueijoMinas.png"><br>
+					Quatá - Queijo Minas Padrão 1kg</a><br>
+				</div>
+
+			<div id="openmodal1" class="modalDialog">
+				<div class="popup">
+					<a href="#close" class="close">X</a>
+					<img src="Imagens/CremeDeLeite.png">
+					<div id="btns">
+						<button onclick="somar1()" class="somar">+</button> 
+						<h3><span id="resultado1" class="qtd">0</span></h3>
+						<button onclick="subtrair1()" class="subtrair">-</button>
+					</div>
+					<a href=#close class="confirma">Confirmar</a>
+					<br>
+					<h2>Piracanjuba - Creme de Leite, 200g</h2>
+					<br>
+					<h3>Sobre este item:</h3>
+					<ul>
+						<li>É leve, saudável e deixa tudo mais gostoso</li>
+						<li>200 Gramas</li>
+						<li>Deixa sua receita com um toque</li>
+						<li>Manter em local seco, fechar bem o compartimento após cada uso</li>
+					</ul></a>
+				</div>
+			</div>
+			<div id="openmodal2" class="modalDialog">
+				<div class="popup">
+					<a href="#close" class="close">X</a>
+					<img src="Imagens/CaixaDeLeite.png">
+					<div id="btns">
+						<button onclick="somar2()" class="somar">+</button> 
+						<h3><span id="resultado2" class="qtd">0</span></h3>
+						<button onclick="subtrair2()" class="subtrair">-</button>
+					</div>
+					<a href=#close class="confirma">Confirmar</a>
+					<br>
+					<h2>Piracanjuba - Leite Uht Integral Caixa Com Tampa 1L</h2>
+					<br>
+					<h3>Sobre este item:</h3>
+					<ul>
+						<li>No café da manhã, em um delicioso lanche da tarde ou até mesmo antes 
+							de dormir, o Leite Piracanjuba cumpre bem o seu papel principal: trazer 
+							mais sabor para os seus momentos especiais e para as suas receitas. 
+							Mais sabor para todos os momentos.</li>
+						<li>Modo de conservação: Mantenha em local seco e arejado. Antes do uso, 
+							não necessita de refrigeração. Após aberto, manter em geladeira 
+							(1°C - 10°C) e consumir em até 2 dias</li>
+					</ul></a>
+				</div>
+			</div>
+			<div id="openmodal3" class="modalDialog">
+				<div class="popup">
+					<a href="#close" class="close">X</a>
+					<img src="Imagens/LeiteEmPo.png">
+					<div id="btns">
+						<button onclick="somar3()" class="somar">+</button> 
+						<h3><span id="resultado3" class="qtd">0</span></h3>
+						<button onclick="subtrair3()" class="subtrair">-</button>
+					</div>
+					<a href=#close class="confirma">Confirmar</a>
+					<br>
+					<h2>Ninho - Leite em Pó, Integral, 380g</h2>
+					<br>
+					<h3>Sobre este item:</h3>
+					<ul>
+						<li>Leite em pó integral rico em cálcio, ferro, zinco rico em vitaminas a, 
+							d, c e e não contém glúten lata 400g</li>
+						<li>"O Ministério Da Saúde Informa: O Aleitamento Materno Evita Infecções 
+							E Alergias E É Recomendado Até Os 2 (Dois) Anos De Idade Ou Mais"</li>
+						<li>Não contém glúten</li>
+						<li>Guardar a lata em lugar fresco e seco. Após a abertura da 
+							lata, o produto conserva-se bom para consumo no prazo máximo 
+							de 30 dias</li>
+						<li>Rendimento: 400 g = 3, 1 litros (15 copos)</li>
+					</ul></a>
+				</div>
+			</div>
+			<div id="openmodal4" class="modalDialog">
+				<div class="popup">
+					<a href="#close" class="close">X</a>
+					<img src="Imagens/Requeijao.png">
+					<div id="btns">
+						<button onclick="somar4()" class="somar">+</button> 
+						<h3><span id="resultado4" class="qtd">0</span></h3>
+						<button onclick="subtrair4()" class="subtrair">-</button>
+					</div>
+					<a href=#close class="confirma">Confirmar</a>
+					<h2>VIGOR - Requeijão Cremoso Tradicional, 200g</h2>
+					<br>
+					<h3>Sobre este item:</h3>
+					<ul>
+						<li>Requeijão Vigor é tão saboroso que fica bom com tudo: 
+							no pão, biscoito, goiabada, na sua receita preferida, Cremosidade 
+							única, sabor exclusivo.</li>
+						<li>O verdadeiro campeão de vendas.</li>
+					</ul></a>
+				</div>
+			</div>
+			<div id="openmodal5" class="modalDialog">
+				<div class="popup">
+					<a href="#close" class="close">X</a>
+					<img src="Imagens/Danone.png">
+					<div id="btns">
+						<button onclick="somar5()" class="somar">+</button> 
+						<h3><span id="resultado5" class="qtd">0</span></h3>
+						<button onclick="subtrair5()" class="subtrair">-</button>
+					</div>
+					<a href=#close class="confirma">Confirmar</a>
+					<br>
+					<h2>DANONE - Bebida Lactea de Morango, 510g</h2>
+					<br>
+					<h3>Sobre este item:</h3>
+					<ul>
+						<li>A bebida láctea DANONE sabor morango é um produto 
+							alimentício produzido pela empresa Danone.</li>
+						<li>É uma bebida láctea que contém leite fermentado e pedaços 
+							de morango, além de outros ingredientes, como açúcar e 
+							espessantes.</li>
+						<li>A embalagem possui 510g de produto.</li>
+						<li>A Danone é uma empresa multinacional francesa que produz 
+							diversos produtos alimentícios, incluindo iogurtes, bebidas 
+							lácteas e outros produtos relacionados à saúde e nutrição.</li>
+					</ul></a>
+				</div>
+			</div>
+			<div id="openmodal6" CLASS="modalDialog">
+				<div class="popup">
+					<a href="#close" class="close">X</a>
+					<img src="Imagens/QueijoMinas.png">
+					<div id="btns">
+						<button onclick="somar6()" class="somar">+</button> 
+						<h3><span id="resultado6" class="qtd">0</span></h3>
+						<button onclick="subtrair6()" class="subtrair">-</button>
+					</div>
+					<a href=#close class="confirma">Confirmar</a>
+					<br>
+					<h2>Queijo Minas Padrão Quatá 1kg</h2>
+					<br>
+					<h3>Sobre este item:</h3>
+					<ul>
+						<li>O Queijo Minas Padrão Quatá é brasileiro por excelência e a sua 
+							fabricação vem desde os tempos coloniais.</li>
+						<li>Muito conhecido como Minas Curado, ele apresenta uma massa macia, 
+							suave e de cor ligeiramente amarelada.</li>
+						<li>O queijo minas padrão pode ser utilizado na elaboração de pães e 
+							pratos.</li>
+						<li>O sabor é bem marcante e requintado. Queijo Minas Padrão Quatá 1kg</li>
+					</ul></a>
+				</div>
+			</div>
+		</section>
+
+	 <section id="contato">
+		<div class="meio-contato">
+		  <h3>Contato</h3>
+		  <h5>+11 97797-9770</h5>
+		  <h5>+11 96250-4239</h5>
+		</div>
+		<div class="meio-contato">
+		  <h3>Explore o site</h3>
+		  <h5><li><a href="MenuVStock.html">Menu</a></li>
+			<li><a href="InventarioVStock.html">Inventário</a></li>
+			<li><a href="ItensVStock.html">Itens</a></li>
+			<li><a href="CadastroVStock.html">Cadastro</a></li>
+			<li><a href="LoginVStock.html">Login</a></li></h5>
+		  </div>
+		</section>
+	
+
+		<script>
+			//-------------------------- Programação Mobile ---------------------------------------
+
+				let btnMenu = document.getElementById('open-mobile')
+				let Menu = document.getElementById('menu-mobile')
+
+				btnMenu.addEventListener('click', ()=>{
+					Menu.classList.add('abrir-menu')
+				})
+
+				Menu.addEventListener('click', ()=>{
+					Menu.classList.remove('abrir-menu')
+				})
+
+		</script>
+		<script>
+//------------------------------------- 1 -----------------------------------------
+
+		var resultado1 = 0;
+		function subtrair1() {    
+    		if(resultado1 >=1 ){
+        		console.log(resultado1)
+        		resultado1 -= 1;
+        		atualizarResultado1();
+    		}
+		}
+
+		function somar1() {
+    		resultado1 += 1;
+    		atualizarResultado1();
+		}
+
+		function atualizarResultado1() {
+    		document.getElementById("resultado1").innerText = resultado1;
+		}
+
+//-------------------------------------- 2 -----------------------------------------
+
+		var resultado2 = 0;
+		function subtrair2() {    
+    		if(resultado2 >=1 ){
+        		console.log(resultado2)
+        		resultado2 -= 1;
+     		atualizarResultado2();
+    		}
+		}
+
+		function somar2() {
+    		resultado2 += 1;
+    		atualizarResultado2();
+		}
+
+		function atualizarResultado2() {
+   	 		document.getElementById("resultado2").innerText = resultado2;
+		}
+
+//------------------------------------- 3 -----------------------------------------
+
+		var resultado3 = 0;
+		function subtrair3() {    
+   	 		if(resultado3 >=1 ){
+        		console.log(resultado3)
+        		resultado3 -= 1;
+        		atualizarResultado3();
+    		}
+		}
+
+		function somar3() {
+    		resultado3 += 1;
+   	 		atualizarResultado3();
+		}
+
+		function atualizarResultado3() {
+    		document.getElementById("resultado3").innerText = resultado3;
+		}
+
+//------------------------------------- 4 -----------------------------------------
+
+
+		var resultado4 = 0;
+		function subtrair4() {    
+    		if(resultado4 >=1 ){
+        		console.log(resultado4)
+        		resultado4 -= 1;
+        		atualizarResultado4();
+    		}
+		}
+
+		function somar4() {
+    		resultado4 += 1;
+    		atualizarResultado4();
+		}
+
+		function atualizarResultado4() {
+   			document.getElementById("resultado4").innerText = resultado4;
+		}
+
+//------------------------------------- 5 -----------------------------------------
+
+
+		var resultado5 = 0;
+		function subtrair5() {    
+    		if(resultado5 >=1 ){
+        		console.log(resultado5)
+        		resultado5 -= 1;
+        		atualizarResultado5();
+    		}
+		}
+
+		function somar5() {
+    		resultado5 += 1;
+    		atualizarResultado5();
+		}
+
+		function atualizarResultado5() {
+    		document.getElementById("resultado5").innerText = resultado5;
+		}
+
+//------------------------------------- 6 -----------------------------------------
+
+		var resultado6 = 0;
+		function subtrair6() {    
+    		if(resultado6 >=1 ){
+        		console.log(resultado6)
+        		resultado6 -= 1;
+        		atualizarResultado6();
+    		}
+		}
+
+		function somar6() {
+    		resultado6 += 1;
+    		atualizarResultado6();
+		}
+
+		function atualizarResultado6() {
+    		document.getElementById("resultado6").innerText = resultado6;
+		}
+
+		</script>
+	</body>
+</html>

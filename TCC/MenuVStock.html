@@ -1,0 +1,139 @@
+﻿<!doctype html>
+  <html lang="pt-br">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Menu - V-Stock</title>
+  <link rel="stylesheet" href="VS.css">
+  </head>
+ 
+ <body>
+		<header>
+			<div class="logo"><h1>V-Stock</h1></div>
+			<div class="cabecalho">
+				<li><a href="MenuVStock.html">Início</a></li>
+				<li><a href="InventarioVStock.html">Inventário</a></li>
+				<li><a href="ItensVStock.html">Itens</a></li>
+				<li><a href="LoginVStock.html">Login</a></li>
+			</div>
+
+			<div class="open-mobile" id="open-mobile">
+				<img src="Imagens/MenuMobile.png">
+			</div>
+
+			<div class="menu-mobile" id="menu-mobile">
+				<div class="close-mobile" id="close-mobile">
+					<h2>X</h2>
+				</div>
+
+				<nav>
+					<ul>
+					<li><a href="MenuVStock.html">Início</a></li>
+					<li><a href="InventarioVStock.html">Inventário</a></li>
+					<li><a href="ItensVStock.html">Itens</a></li>
+					<li><a href="LoginVStock.html">Login</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<section id="Menu">
+			<div class="menu-texto">
+				<h1>ACESSE SEU</h1>
+				<h1>INVENTÁRIO</h1>
+				<p>Entre com o cadastro da sua empresa e acesse!</p>
+				<a href="CadastroVStock.html">Inventário</a>
+			</div>
+		</section>
+
+		<section id="Carrossel">
+			<div id="slider">
+
+				<div class="slides">
+					<input type="radio" name="radio-btn" id="radio1">
+					<input type="radio" name="radio-btn" id="radio2">
+					<input type="radio" name="radio-btn" id="radio3">
+					<input type="radio" name="radio-btn" id="radio4">
+
+					<div class="slide first"><img src="Imagens/Slide1.png" alt="image1"></div>
+					<div class="slide"><img src="Imagens/Slide2.png" alt="image2"></div>
+					<div class="slide"><img src="Imagens/Slide3.png" alt="image3"></div>
+					<div class="slide"><img src="Imagens/Slide4.png" alt="image4"></div>
+
+				</div>
+
+				<div class="manual-navigation">
+					<label for="radio1" class="manual-btn"></label>
+					<label for="radio2" class="manual-btn"></label>
+					<label for="radio3" class="manual-btn"></label>
+					<label for="radio4" class="manual-btn"></label>
+				</div>
+
+			</div>
+		</section>
+
+		<section id="Introducao">
+			<div class="menu-introducao">
+				<h2>O que é o V-Stock?</h2>
+				<P>Somos um site que tem como intuito facilitar os processos 
+				de estocagem de produtos de empresas utilizando os recursos 
+				disponíveis para cadastramento de produtos e computação de valores 
+				em estoque para um fácil controle e administração de itens.</p>
+			</div>
+		</section>
+
+		<section id="contato">
+			<div class="meio-contato">
+			  <h3>Contato</h3>
+			  <h5>+11 97797-9770</h5>
+			  <h5>+11 96250-4239</h5>
+			</div>
+			<div class="meio-contato">
+			  <h3>Explore o site</h3>
+			  <h5><li><a href="MenuVStock.html">Menu</a></li>
+				<li><a href="InventarioVStock.html">Inventário</a></li>
+				<li><a href="ItensVStock.html">Itens</a></li>
+				<li><a href="CadastroVStock.html">Cadastro</a></li>
+				<li><a href="LoginVStock.html">Login</a></li></h5>
+			  </div>
+			</section>
+
+			<script>
+//--------------------------------- Programação Mobile ---------------------------------------
+
+				let btnMenu = document.getElementById('open-mobile')
+				let Menu = document.getElementById('menu-mobile')
+
+				btnMenu.addEventListener('click', ()=>{
+					Menu.classList.add('abrir-menu')
+				})
+
+				Menu.addEventListener('click', ()=>{
+					Menu.classList.remove('abrir-menu')
+				})
+
+			</script>
+			<script>
+//--------------------------------- Programação Carrosel -------------------------------------------------
+
+			let count = 1;
+				document.getElementById("radio1").checked = true;
+
+				setInterval( function(){
+					nextImage()
+				}, 6000)
+
+				function nextImage(){
+					count++;
+					if(count>4){
+						count = 1;
+					}
+
+					document.getElementById("radio"+count).checked = true;
+
+				}
+
+			</script>
+		</body>
+</html>

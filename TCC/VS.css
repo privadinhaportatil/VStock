@@ -1,0 +1,861 @@
+/*-------------------------------------------------Estilizações Gerais---------------------------------------------------*/
+
+* {
+	font-family: arial;
+	border: none;
+	text-decoration: none;
+	list-style: none;
+}
+
+/*Mudanças aplicadas apenas no corpo do HTML*/
+body{
+	margin: 0; 
+	padding: 0; 
+	padding-top: 10vh;
+	box-sizing: border-box;
+	border: none;
+	overflow-x: hidden;
+}
+
+/*Criação de um plano de fundo*/
+.background {
+	background-image: url(Imagens/VSBanner.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center top;
+	padding-bottom: 5rem;
+	width: 100%;
+	max-width: 100%;
+	height: 100vh;
+}
+
+/*Cabeçalho com os links para outras páginas*/
+header {
+	display: flex;
+	justify-content: space-around;
+	padding-top: 0;
+	align-items: center;
+	text-align: center;
+	width: 100%;  
+	top: 0;
+	right: 0;
+	position: fixed;
+	transition: all .35s ease;
+	background: linear-gradient(to right, rgb(35, 0, 161), rgb(211, 31, 202));
+	padding: 14px 5%;
+	border-bottom: 2px solid white;
+	z-index: 9999;
+}
+
+/*Definições da logo V-Stock*/
+.logo {
+	font-weight: 500;
+	font-size: 25px;
+	color: #ffffff;
+
+}
+
+/*Palavras do cabeçalho*/
+.cabecalho {
+	color: white;
+	display: flex; 
+	gap: 4rem;
+}
+
+/*Links do cabeçalho*/
+.cabecalho a{
+	text-decoration: none;
+	font-weight: 700;
+	transition: 0.3s;
+	color: rgb(223, 223, 223);
+}
+
+/*Links quando selecionadas com o mouse no cabeçalho*/
+.cabecalho a:hover{
+	color: rgb(128, 128, 128);
+}
+
+/*Bloco de contatos*/
+#contato {
+	padding: 8rem;
+	display: flex;
+	gap: 5rem;
+	justify-content: space-around;
+	background-color: #26003f;
+	border-top: 8px solid white;
+	grid-template-columns: repeat(auto-fit, minmax (200px, auto));
+}
+
+/*Palavras da parte de contatos*/
+.meio-contato h3 {
+	color: white;
+	font-size: 23px;
+	margin-bottom: 1.6rem;
+}
+
+.meio-contato h5 {
+	line-height: 2rem;
+	font-size: 15px;
+	font-weight: 600;
+	color: gray;
+}
+
+/*Links da parte de contatos*/
+.meio-contato li a {
+	line-height: 2rem;
+	text-decoration: none;
+	display: block;
+	color: gray;
+	font-weight: 600;
+	transition: 0.35s ease;
+}
+
+.meio-contato li a:hover {
+	color: rgb(182, 182, 182);
+}
+
+/**********Estilo Menu Mobile**************/
+.menu-mobile {
+	background: linear-gradient(to bottom, rgb(35, 0, 161), rgb(211, 31, 202));
+	border-left: 3px solid white;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 9999;
+	width: 0%;
+	overflow: hidden;
+	transition: 0.5s; 
+}
+
+.menu-mobile.abrir-menu {
+	width: 60%;
+}
+
+.menu-mobile.abrir-menu ~ .overlay-menu{
+	display: block;
+}
+
+.open-mobile {
+	display: none;
+}
+
+.open-mobile img {
+	top: 0;
+	right: 0;
+	padding-left: 350%;
+	width: 50px;
+	height: auto;
+	cursor: pointer;
+	display: none;
+}
+
+.overlay-menu {
+	position: absolute;
+	background-color: rgb(0, 0, 0);
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 88888;
+	display: none;
+}
+
+.close-mobile {
+	top: 0;
+	padding-right: 90%;
+	
+}
+
+.close-mobile h2{
+	color: white;
+	font-size: 25px;
+}
+
+.menu-mobile nav ul {
+	text-align: right;
+	list-style: none;
+}
+
+.menu-mobile nav ul li a{ 
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	font-weight: 700;
+	padding: 5%;
+	line-height: 80px;
+	display: block;
+}
+
+.menu-mobile nav ul li a:hover{
+	transition: 0.3s;
+	border-radius: 20px;
+	background: purple;
+}
+
+/*------------------------------------------Cadastro - V-Stock e Login - V-Stock---------------------------------*/
+
+input, label {
+	display: block;
+	outline: none;
+	width: 100%;
+  }
+  
+  a {
+	color: #c420d3;
+  }
+  
+  /* form */
+  #main-container {
+	width: 500px;
+	margin: 10% auto 15% auto;
+	background-color: #FFF;
+	border: 3px solid black;
+	border-radius: 10px;
+	padding: 25px;
+  }
+  
+  #main-container h1 {
+	text-align: center;
+	margin-bottom: 25px;
+	font-size: 1.6rem;
+	
+  }
+  
+  form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+  }
+  
+  .full-box {
+	flex: 1 1 100%;
+	position: relative;
+  }
+  
+  .half-box {
+	flex: 1 1 45%;
+	position: relative;
+  }
+  
+  .spacing {
+	margin-right: 7.5%;
+  }
+  
+  label {
+	font-weight: bold;
+	font-size: .8rem;
+  }
+  
+  input {
+	border-bottom: 2px solid #323232;
+	padding: 10px;
+	font-size: .9rem;
+	margin-bottom: 40px;
+  }
+  
+  input:focus {
+	border-color: #E60084;
+  }
+  
+  input[type="submit"] {
+	background-color: rgb(152, 18, 185);
+	color: #FFF;
+	border: none;
+	border-radius: 20px;
+	height: 40px;
+	cursor: pointer;
+  }
+  
+  #agreement {
+	margin-right: 5px;
+  }
+  
+  #agreement, #agreement-label {
+	display: inline-block;
+	width: auto;
+  }
+  
+  .error-validation {
+	color: #ff1a1a;
+	position: absolute;
+	top: 57px;
+	font-size: 12px;
+  }
+  
+  .template {
+	display: none;
+  }
+
+/*----------------------------------------------------Menu - V-Stock---------------------------------------------*/
+
+/*Ajustes do menu */
+#Menu {
+	padding-top: 16rem;
+	background: url(Imagens/VSBannerMenu.png);
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 60vh;
+	display: flex;
+	align-items: center;
+	margin-top: 4rem;
+}
+/*Bloco de texto do menu*/
+.menu-texto {
+	padding-bottom: 10rem;
+	padding-left: 5rem;
+	color: white;
+}
+
+/*Palavras do menu*/
+.menu-texto h1 {
+	line-height: 2rem;
+	color: white; 
+	font-size: 3rem;
+}
+
+/*Botão do inventário*/
+.menu-texto a {
+	line-height: 4rem;
+	background-color: rgb(175, 0, 190);
+	padding: 1rem 3rem 1rem 3rem;
+	border-radius: 20px;
+	color: white;
+	font-size: 1rem;
+	cursor: pointer;
+	transition: 0.3s;
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+	transition: 0.35s ease;
+}
+
+/*Link do botão do inventário quando passamos o mouse por cima*/
+.menu-texto a:hover {
+	background-color: rgb(185, 44, 155);
+}
+
+#Carrossel {
+	background: linear-gradient(to bottom, rgb(136, 0, 125),rgb(82, 0, 75));
+	width: 100%;
+	height: 60vh;
+	padding: 5% 0;
+	display: flex;
+	align-items: center;
+}
+
+#slider {
+	width: 100%;
+	height: auto;
+	align-items: center;
+	overflow: hidden;
+	align-items: center;
+}
+
+.slides {
+	width: 400%;
+	height: auto;
+	display: flex;
+}
+
+.slides input {
+	display: none;
+}
+
+.slide {
+	width: 25%;
+	position: relative;
+	transition: 2s;
+}
+
+.slide img {
+	border: 2px solid white;
+	width: 100%;
+	height: auto;
+	align-items: center;
+	z-index: 7777;
+}
+
+.manual-navigation {
+	padding-left: 25%;
+	position: absolute;
+	width: 900px;
+	margin-top: -80px;
+	display: flex;
+	justify-content: center;
+}
+
+.manual-btn {
+	width: 30px;
+	border: 2px solid white;
+	padding: 5px;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: 0.8s;
+}
+
+.manual-btn:not(:last-child) {
+	margin-right: 40px;
+}
+
+.manual-btn:hover {
+	background-color: rgb(255, 255, 255)
+}
+
+#radio1:checked ~ .first{
+	margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+	margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+	margin-left: -50%;
+}
+
+#radio4:checked ~ .first{
+	margin-left: -75%;
+}
+
+#Introducao {
+	background: url(Imagens/VSBanner2.png);
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 90vh;
+	display: flex;
+	align-items: center;
+}
+
+.menu-introducao {
+	padding-left: 5rem;
+	color: white;
+}
+
+.menu-introducao h2 {
+	line-height: 2rem;
+	font-size: 4rem;
+}
+
+.menu-introducao p {
+	line-height: 1.5rem;
+	margin-right: 40%;
+}
+
+/*-------------------------------------------------Itens - V-Stock-------------------------------------------------------*/
+
+/*Fundo da página Itens*/
+.background-itens {
+	background: linear-gradient(to top, rgb(214, 7, 187), rgb(58, 13, 182));
+}
+
+/*Parte externa do bloco dos itens*/
+#Itens {
+	padding-top: 8rem;
+	padding-left: 22%;
+	margin-bottom: 15%;
+}
+
+/*Título "Itens" dentro do bloco*/
+.itens-seleção h1{
+	background-color: #ffffff;
+	border-radius: 6px;
+	color: rgb(126, 126, 126);
+	width: 100%;
+	height: 1rem;
+	margin: 0 27% auto;
+	justify-content: center;
+	text-align: center;
+	font-size: 2rem;
+	display: inline;
+	padding-bottom: 2rem;
+}
+
+/*Bloco dos itens clicáveis*/
+.itens-seleção {
+	background-color: white;
+	border-radius: 10px;
+	width: 70%;
+	justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	padding-top: 2rem;
+	padding-bottom: 3rem; 
+}
+
+/*Imagem dos itens clicáveis*/
+.itens-seleção img {
+	width: 200px;
+	height: auto;
+}
+
+/*Itens clicáveis*/
+.itens-seleção a{
+	width: 220px;
+	height: auto;
+	border: 2px solid rgb(133, 0, 138);
+	border-radius: 6px;
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+	text-align: center;
+	font-family: sans-serif;
+	font-weight: bold;
+	transition: 0.35s ease;
+}
+
+/*Itens clicaveis quando passar o mouse por cima*/
+.itens-seleção a:hover {
+	background-color: rgba(255, 255, 255, 0.438);
+	transform: scale(0.9) translateY(5px);
+	cursor: pointer;
+}
+
+/*Pop-up*/
+.modalDialog {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(168, 168, 168, 0.74);
+	opacity: 0;
+	-webkit-transition: opacitiy 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+	display: none;
+}
+
+/*Pop-up para que ele seja aberto*/
+.modalDialog:target {
+	display: block;
+	opacity: 1;
+	pointer-events: auto;
+}
+
+/*Bloco dentro do pop-up*/
+.modalDialog div {
+	justify-content: center;
+	max-width: 300px;
+	max-height: 700px;
+	width: auto;
+	height: auto;
+	position: relative;
+	margin: 12% auto;
+	padding: 5px 20px 13px 20px;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	box-sizing: border-box;
+	border-radius: 10px;
+	background-color: white;
+	font-size: 10px;
+}
+
+/*Parágrafo dentro do pop-up*/
+.modalDialog p {
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+/*Imagens dentro do pop-up*/
+.modalDialog img {
+	width: 50%;
+	display: flex;
+	margin-left: 25%;
+}
+
+/*Botão de fechar pop-up*/
+.close {
+	background-color: #606061;
+	color: white;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 100px;
+}
+
+/*Botão de fechar pop-up quando passamos o mouse por cima*/
+.close:hover {
+	background-color: #c94a4a;
+}
+
+/*Botões de soma e subtração*/
+.somar {
+	height: 50px;
+	width: 50px;
+	font-size: 20px;
+	text-align: center;
+	border-radius: 50%;
+	background-color: rgb(53, 134, 255);
+	color: rgb(255, 255, 255);
+}
+
+.somar:hover {
+	background-color: rgb(96, 151, 255);
+}
+
+.subtrair {
+	position: absolute;
+	top: 5px;
+	left: 180PX;
+	height: 50px;
+	width: 50px;
+	font-size: 20px;
+	text-align: center;
+	border-radius: 50%;
+	background-color: rgb(212, 145, 57);
+	color: rgb(255, 255, 255);
+}
+
+.subtrair:hover {
+	background-color: rgb(238, 173, 77);
+}
+
+/*Números da quantidade em estoque*/
+.qtd {
+	position: absolute;
+	top: 20px;
+	left: 120px;
+	font-size: 20px;
+}
+
+/*Botão de confirmação*/
+.confirma {
+	margin-left: 30%;
+	padding: 2%;
+	font-size: 18px;
+	border-radius: 40px;
+	border: 1px solid black;
+	background-color: rgb(0, 214, 64);
+	color: white;
+	text-decoration: none;
+}
+
+.confirma:hover {
+	background-color:  rgb(0, 238, 71);
+}
+
+/*------------------------------------------Inventário - V-Stock---------------------------------------------------*/
+
+/*Espaçamento de toda a seção*/
+#Estoque {
+	padding-top: 6rem;
+}
+
+/*Título do Inventário*/
+.título-estoque h1{
+	font-size: 2rem;
+	padding-left: 2rem;
+	padding-bottom: 2rem;
+	color: rgb(126, 126, 126);;
+}
+
+/*Bloco do Inventário*/
+.meio-estoque {
+	width: 100%;
+	height: auto;
+	background: linear-gradient(to right, rgb(187, 1, 171), rgb(143, 0, 179));
+	justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	padding-top: 2rem;
+	padding-bottom: 16rem;
+	font-weight: bold;
+}
+
+/*Imagens do bloco Inventário*/
+.meio-estoque img {
+	width: 150px;
+	height: auto;
+}
+
+/*Links/todo o bloco em que as imagens estão inseridas*/
+.meio-estoque a {
+	background-color: white;
+	text-decoration: none;
+	border-radius: 10px;
+	border: 2px solid rgb(133, 0, 138);
+	color: rgb(0, 0, 0);
+	text-align: center;
+	width: 160px;
+	height: auto;
+	display: inline;
+	transition: 0.35s ease;
+}
+
+/*Links do bloco das imagens quando passamos o mouse por cima*/
+.meio-estoque a:hover {
+	transform: scale(0.9) translateY(5px);
+	cursor: pointer;
+}
+
+/*Botão de fechar pop-up*/
+.meio-estoque .close1 {
+	background-color: #606061;
+	border: none;
+	color: white;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 100px;
+	transition: none;
+}
+
+/*Botão de fechar pop-up quando passamos o mouse por cima*/
+.meio-estoque .close1:hover {
+	background-color: #c94a4a;
+	transform: none;
+}
+
+/*Bloco Adicionar*/
+#adicionar {
+	background: linear-gradient(to bottom, rgb(117, 117, 117), rgb(68, 68, 68));
+	border-radius: 10px;
+	border: 2px solid rgb(194, 194, 194);
+	width: 160px;
+	color: white;
+	height: auto;
+	text-align: center;
+	justify-content: center;
+	font-size: 20px;
+	margin-right: 20px;
+	padding-top: 5%;
+}
+
+/*Link do bloco Adicionar*/
+#adicionar a {
+	border: none;
+	text-decoration: none;
+	color: white;
+	transition: 0.35s ease;
+}
+
+/*Link do bloco Adicionar quando passsamos o mouse por cima*/
+#adicionar a:hover {
+	transform: scale(0.9) translateY(5px);
+	cursor: pointer;
+}
+
+/*------------------------------------ Configurações de Responsividade----------------------------------------------------------------------*/
+
+@media screen and (max-width: 600px) {
+
+	/******************* Gerais ********************/
+	.open-mobile, .open-mobile img {
+		display: block;
+	}
+
+	.logo {
+		display: none;
+	}
+
+	.cabecalho {
+		display: none;
+	}
+
+	.meio-contato h5 {
+		width: 110px;
+	}
+
+	/******************** Menu ***********************/
+
+	#Menu {
+		border: 2px solid white;
+		background-position: left;
+		max-width: 500px;
+		height: auto;
+		margin-top: 0;
+	}
+
+	.menu-texto {
+		padding-left: 2rem;
+	}
+
+	.menu-texto a:hover {
+		background-color: rgb(185, 44, 155);
+	}
+
+	.slide img {
+		border: none;
+		width: 200%;
+	}
+
+	.manual-navigation {
+		width: 100%;
+		margin-top: -80px;
+		padding-left: 0%;
+	}
+
+	.manual-btn {
+		width: 16px;
+	}
+
+	#Introducao {
+		border: 2px solid white;
+		background-position: left;
+	}
+
+	.menu-introducao {
+		padding-left: 3rem;
+	}
+
+	.menu-introducao h2 {
+		line-height: 5rem;
+	}
+
+	.menu-introducao p {
+		line-height: 1.5rem;
+		margin-right: 10%;
+	}
+
+	/******************* Itens ********************/
+	#Itens {
+		padding-left: 15%;
+	}
+
+	.itens-seleção {
+		width: 85%;
+		margin-top: 20%;
+	}
+
+	.background-itens {
+		flex-direction: column;
+	}
+
+	.modalDialog div {
+		margin-top: 24%
+	}
+
+	/***************** Inventário **************/
+	#Estoque {
+		padding-top: 2rem;
+	}
+
+	.título-estoque h1{
+		padding-left: 1rem;
+	}
+
+	/******************* Login ******************/
+
+	#main-container {
+		width: 350px;
+	  }
+}
